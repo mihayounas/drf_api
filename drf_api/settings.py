@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'cloudinary',
     'profiles',
     'posts',
+    'comments',
+    'likes',
+    'followers',
     'rest_framework'
 ]
 
