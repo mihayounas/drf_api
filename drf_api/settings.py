@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     'rest_framework',
+    'dj_auth_rest',
     'dj_rest_auth.registration',
     'corsheaders',
 ]
