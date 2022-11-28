@@ -47,14 +47,21 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'rest_framework',
+    'django_filters',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+
     'profiles',
     'posts',
     'comments',
     'likes',
     'followers',
-    'rest_framework',
-    'dj_rest_auth.registration',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
