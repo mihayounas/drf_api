@@ -34,7 +34,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-    'DATETIME_FORMAT': '%d %b %Y',
+    'DATETIME_FORMAT': '%I:%M %p on %d %b %Y ',
 }
 if 'DEV' not in os.environ:
     REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = [
@@ -91,7 +91,7 @@ MIDDLEWARE = [
 
 
 if 'CLIENT_ORIGIN' in os.environ:
-     CORS_ALLOWED_ORIGINS = [
+    CORS_ALLOWED_ORIGINS = [
          os.environ.get('CLIENT_ORIGIN')
      ]
 else:
@@ -144,16 +144,20 @@ print('connected')
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+            UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+            MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+            CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+            NumericPasswordValidator',
     },
 ]
 
